@@ -9,12 +9,7 @@ components:
       memoryRequest: '1Gi'
       cpuLimit: '1'
       cpuRequest: '0.5'
-  - name: runtime
-    container:
-      image: registry.redhat.io/ubi9/nodejs-20
-      endpoints:
-        - name: http-3000
-          targetPort: 3000
+
 commands:
   - id: hello
     exec:
