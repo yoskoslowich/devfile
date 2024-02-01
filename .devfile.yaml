@@ -25,3 +25,10 @@ commands:
       commandLine: ls
       group:
         kind: run
+  - id: pythonserver
+    exec:
+      label: "Up Python Server"
+      component: tools
+      commandLine: python3 -m http.server
+      group:
+        kind: run
