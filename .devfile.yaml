@@ -11,7 +11,7 @@ components:
       cpuRequest: '0.5'
   - name: server
     container:
-      image: php:5.6-apache
+      image: httpd:latest
 
 commands:
   - id: hello
