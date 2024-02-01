@@ -9,6 +9,9 @@ components:
       memoryRequest: '1Gi'
       cpuLimit: '1'
       cpuRequest: '0.5'
+  - name: python2
+    container:
+      image: quay.io/centos7/python-27-centos7
 
 commands:
   - id: hello
