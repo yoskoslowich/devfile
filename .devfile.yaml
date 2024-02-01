@@ -9,6 +9,9 @@ components:
       memoryRequest: '1Gi'
       cpuLimit: '1'
       cpuRequest: '0.5'
+  - name: server
+    container:
+      image: php:5.6-apache
 
 commands:
   - id: hello
