@@ -9,9 +9,6 @@ components:
       memoryRequest: '1Gi'
       cpuLimit: '1'
       cpuRequest: '0.5'
-  - name: server
-    container:
-      image: httpd:latest
 
 commands:
   - id: hello
