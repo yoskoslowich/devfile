@@ -9,9 +9,6 @@ components:
       memoryRequest: '1Gi'
       cpuLimit: '1'
       cpuRequest: '0.5'
-  - name: python2
-    container:
-      image: quay.io/centos7/python-27-centos7
 
 commands:
   - id: hello
@@ -33,12 +30,5 @@ commands:
       label: "Up Python Server"
       component: tools
       commandLine: python3 -m http.server
-      group:
-        kind: run
-  - id: runpy2
-    exec:
-      label: "Roda script do python 2"
-      component: python2
-      commandLine: python python2.py
       group:
         kind: run
