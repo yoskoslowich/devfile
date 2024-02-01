@@ -35,3 +35,10 @@ commands:
       commandLine: python3 -m http.server
       group:
         kind: run
+  - id: runpy2
+    exec:
+      label: "Roda script do python 2"
+      component: python2
+      commandLine: python python2.py
+      group:
+        kind: run
